@@ -54,7 +54,8 @@ ROOT_URLCONF = 'MVT_Felipe.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        #modificamos para agregar plantillas varias
+        'DIRS': ['C:/Users/Felipe Ignacio/Desktop/MVT+Felipe/MVT_Felipe/plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
