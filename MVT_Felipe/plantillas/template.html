@@ -7,6 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    Wena phu ctm
+    <br><br>
+    {%  for x in lista %}
+       Nombre              : {{ x.nombre }} <br>
+       Apellido            : {{ x.apellido }} <br>
+       Edad                : {{ x.edad }} <br>
+       Fecha de nacimiento : {{ x.fecha_nacimiento }} <br>
+
+       {% if x.licenciaConducirActivada == True %}
+       <p style="color: green;">Licencia de conducir activada </p><br>
+       {% else %}
+       <p style="color: red;">Licencia de conducir desactivada </p><br>
+       {% endif %}
+
+       <hr>
+       {% endfor %}
+    
 </body>
 </html>
